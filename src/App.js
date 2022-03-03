@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from "react";
-import Home from "./Home";
+import HomeCarousel from "./HomeCarousel";
 import Navigation from "./Navigation";
+import Container from "react-bootstrap/Container";
 
 function App() {
   return (
-    <div className="App">
+    <Container>
       <Navigation />
       <main>
-        <Home />
+        <HomeCarousel />
       </main>
-    </div>
+    </Container>
   );
 }
 

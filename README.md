@@ -4,15 +4,26 @@ A short description of your project.
 A website for the record label/party series I run called L.A.U.R.A. Recs
 
 Link to the API you plan to use
-curl -X GET "https://api.soundcloud.com/tracks/308946187/streams" -H "accept: application/json; charset=utf-8"
+https://soundcloud.com/oembed?format=json&url=https://m.soundcloud.com/laurarecs/autumns-my-bodys-overwhelming-sound-of-decay-ft-lower-tar
 
+```
 Example data response you plan to use
 {
-"http_mp3_128_url": "https://cf-media.sndcdn.com/",
-"hls_mp3_128_url": "https://cf-media.sndcdn.com/",
-"hls_opus_64_url": "https://cf-media.sndcdn.com/",
-"preview_mp3_128_url": "https://cf-media.sndcdn.com/"
+version: 1,
+type: "rich",
+provider_name: "SoundCloud",
+provider_url: "https://soundcloud.com",
+height: 400,
+width: "100%",
+title: "Autumns - My Body's Overwhelming Sound Of Decay Ft Lower Tar by L.A.U.R.A. RECS",
+description: "L.A.U.R.A. Recs 006 : Autumns / Smog Index - Tasteless EP",
+thumbnail_url: "https://i1.sndcdn.com/artworks-E6cTuMBcBTbnlpCX-iPySHQ-t500x500.jpg",
+html: "<iframe width="100%" height="400" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?visual=true&url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F1207900078&show_artwork=true"></iframe>",
+author_name: "L.A.U.R.A. RECS",
+author_url: "https://soundcloud.com/laurarecs"
 }
+```
+
 Visual of your component hierarchy
 Project 1 Component Hierarchy
 
