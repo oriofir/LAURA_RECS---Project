@@ -1,4 +1,4 @@
-import react from "react";
+import React, { useState, useEffect } from "react";
 import Home from "./Home";
 import Navigation from "./Navigation";
 
@@ -7,7 +7,6 @@ function App() {
     <div className="App">
       <Navigation />
       <main>
-        <h1>APP Check WOWOW</h1>
         <Home />
       </main>
     </div>
