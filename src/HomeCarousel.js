@@ -12,7 +12,7 @@ const HomeCarousel = () => {
   };
 
   useEffect(() => {
-    const url = `https://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=${data[0].artist}&api_key=4cbbdf80e334145c9a6ae6b78ec01e37&format=json`;
+    const url = `https://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=${data.artist}&api_key=4cbbdf80e334145c9a6ae6b78ec01e37&format=json`;
 
     fetch(url)
       .then((res) => res.json())
@@ -21,6 +21,9 @@ const HomeCarousel = () => {
         setSimilarArtists(data);
       });
   }, []);
+  if (!similarArtists) {
+    return null;
+  }
 
   return (
     <Carousel interval={10000} style={{ minHeight: "90vh" }}>
