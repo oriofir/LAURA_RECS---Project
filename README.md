@@ -50,9 +50,10 @@ MVP Goals
 - Flip through the homepage carousel with different release album cover art
 - linking API data for the album art work and song associated with it
 - clicking a play button thats on each slide and have it link to a song associated
+-
 - clicking into the carousel and having it route to the release
-- each slide will have the ability to preview a song off of the associated release
 - stylizing the homepage to match the label's aesthetic
+- click similar artists button and have it display similar artist cards
 
 Stretch Goals
 

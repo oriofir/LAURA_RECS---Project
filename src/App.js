@@ -14,7 +14,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/." element={<Navigation />}></Route>
-          <Route path="/home" element={<HomeCarousel data={data[0]} />}></Route>
+          <Route path="/." element={<HomeCarousel data={data[0]} />}></Route>
           <Route path="/releases" element={<Releases />}></Route>
         </Routes>
       </main>
