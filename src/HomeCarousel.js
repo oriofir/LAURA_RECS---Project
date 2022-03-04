@@ -3,6 +3,7 @@ import { Carousel } from "react-bootstrap";
 import data from "./data.json";
 import { Button } from "react-bootstrap";
 import { Router, Route, Link } from "react-router-dom";
+import SimilarArtists from "./SimilarArtists";
 
 const HomeCarousel = () => {
   const [stream, setStream] = useState(data[0].stream);

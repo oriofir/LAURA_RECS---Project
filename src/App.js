@@ -6,6 +6,7 @@ import Container from "react-bootstrap/Container";
 import data from "./data.json";
 import About from "./About";
 import Releases from "./Releases";
+import SimilarArtists from "./SimilarArtists";
 
 function App() {
   return (
@@ -15,6 +16,10 @@ function App() {
         <Routes>
           <Route path="/" element={<HomeCarousel data={data[0]} />}></Route>
           <Route path="/releases" element={<Releases />}></Route>
+          <Route
+            path="similarartists/:symbol"
+            element={<SimilarArtists />}
+          ></Route>
         </Routes>
       </main>
     </Container>

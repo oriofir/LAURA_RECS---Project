@@ -20,7 +20,7 @@ function SimilarArtists(props) {
   }
   return (
     <div>
-      <h2>Similar Artists</h2>
+      <h2>Similar Artists to {artist}</h2>
     </div>
   );
 }
