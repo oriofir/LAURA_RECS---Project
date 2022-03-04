@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 function SimilarArtists(props) {
+  const { artist } = useParams();
   const [similarArtists, setSimilarArtists] = useState([]);
 
   useEffect(() => {
-    const url = `https://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=${data.artist}&api_key=${process.env.REACT_APP_API_KEY}&format=json`;
+    const url = `https://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=${artist}&api_key=${process.env.REACT_APP_API_KEY}&format=json`;
 
     fetch(url)
       .then((res) => res.json())

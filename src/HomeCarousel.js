@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Carousel } from "react-bootstrap";
 import data from "./data.json";
 import { Button } from "react-bootstrap";
+import { Router, Route, Link } from "react-router-dom";
 
 const HomeCarousel = () => {
   const [stream, setStream] = useState(data[0].stream);
+  console.log(stream);
 
   const handleStream = () => {
     setStream(stream);
@@ -32,7 +34,9 @@ const HomeCarousel = () => {
               <Button variant="dark" onClick={handleStream}>
                 Preview
               </Button>{" "}
-              <Button variant="dark">Similar Artists</Button>{" "}
+              <Link to={`/similarartists/${element.artist}`}>
+                <Button variant="dark">Similar Artists</Button>{" "}
+              </Link>
             </Carousel.Caption>
           </Carousel.Item>
         );
