@@ -6,24 +6,9 @@ import { Button } from "react-bootstrap";
 const HomeCarousel = () => {
   const [stream, setStream] = useState(data[0].stream);
 
-  const [similarArtists, setSimilarArtists] = useState([]);
   const handleStream = () => {
-    setStream(data.stream);
+    setStream(stream);
   };
-
-  useEffect(() => {
-    const url = `https://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=${data.artist}&api_key=4cbbdf80e334145c9a6ae6b78ec01e37&format=json`;
-
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        setSimilarArtists(data);
-      });
-  }, []);
-  if (!similarArtists) {
-    return null;
-  }
 
   return (
     <Carousel interval={10000} style={{ minHeight: "90vh" }}>
