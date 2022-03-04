@@ -1,0 +1,60 @@
+[
+    {
+    "'version'": 1,
+    "type": "rich",
+    "provider_name": "SoundCloud",
+    "provider_url": "https://soundcloud.com",
+    "height": 400,
+    "width": "100%",
+    "title": "Autumns - My Body's Overwhelming Sound Of Decay Ft Lower Tar by L.A.U.R.A. RECS",
+    "description": "L.A.U.R.A. Recs 006 : Autumns / Smog Index - Tasteless EP",
+    "thumbnail_url": "https://i1.sndcdn.com/artworks-E6cTuMBcBTbnlpCX-iPySHQ-t500x500.jpg",
+    "author_name": "L.A.U.R.A. RECS",
+    "author_url": "https://soundcloud.com/laurarecs"
+    },
+
+    {
+        "'version'": 1,
+        "type": "rich",
+        "provider_name": "SoundCloud",
+        "provider_url": "https://soundcloud.com",
+        "height": 400,
+        "width": "100%",
+        "title": "J. De Sosa - SYFM by L.A.U.R.A. RECS",
+        "description": "",
+        "thumbnail_url": "https://i1.sndcdn.com/artworks-qBOEa0eYCatUJfIj-xXx3vw-t500x500.jpg",
+        "author_name": "L.A.U.R.A. RECS",
+        "author_url": "https://soundcloud.com/laurarecs"
+    },
+
+    {
+        "version": 1,
+        "type": "rich",
+        "provider_name": "SoundCloud",
+        "provider_url": "https://soundcloud.com",
+        "height": 400,
+        "width": "100%",
+        "title": "Strait Jacket - Dreamcast by L.A.U.R.A. RECS",
+        "description": "",
+        "thumbnail_url": "https://i1.sndcdn.com/artworks-cXWeZDF9yxpMCLoV-vVHryQ-t500x500.jpg",
+        "author_name": "L.A.U.R.A. RECS",
+        "author_url": "https://soundcloud.com/laurarecs"
+        },
+
+        {
+            "version": 1,
+            "type": "rich",
+            "provider_name": "SoundCloud",
+            "provider_url": "https://soundcloud.com",
+            "height": 400,
+            "width": "100%",
+            "title": "Freakwork - Los Angeles Acid Rain by L.A.U.R.A. RECS",
+            "description": "",
+            "thumbnail_url": "https://i1.sndcdn.com/artworks-T5dgxSshOyya1yLa-9ri6Gg-t500x500.jpg",
+            "author_name": "L.A.U.R.A. RECS",
+            "author_url": "https://soundcloud.com/laurarecs"
+            }
+
+
+]
+

@@ -1,29 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import { Carousel } from "react-bootstrap";
+import data from "./data.json";
 
-function Home(props) {
+const HomeCarousel = () => {
   return (
-    <Carousel>
-      <Carousel.Item interval={1000}>
-        <img
-          className="d-block w-100"
-          src="https://i1.sndcdn.com/artworks-E6cTuMBcBTbnlpCX-iPySHQ-t500x500.jpg"
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <iframe
-            width="100%"
-            height="400"
-            scrolling="no"
-            frameborder="no"
-            src="https://w.soundcloud.com/player/?visual=true&url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F1207900078&show_artwork=true"
-          ></iframe>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
+    <Carousel style={{ minHeight: "90vh" }}>
+      {data.map((element, index) => {
+        return (
+          <Carousel.Item key={index} style={{ maxHeight: "90vh" }}>
+            <img
+              className="d-block w-100"
+              style={{
+                height: "90vh",
+                width: "100%",
+                objectFit: "cover",
+                overflow: "hidden",
+              }}
+              src={element.thumbnail_url}
+              alt={data.title}
+            />
+            <Carousel.Caption>
+              <p>{data.title}</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        );
+      })}
     </Carousel>
   );
-}
+};
 
-export default Home;
+export default HomeCarousel;
