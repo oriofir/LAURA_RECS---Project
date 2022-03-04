@@ -8,7 +8,7 @@ const HomeCarousel = () => {
 
   const [similarArtists, setSimilarArtists] = useState([]);
   const handleStream = () => {
-    setStream(stream);
+    setStream(data.stream);
   };
 
   useEffect(() => {
