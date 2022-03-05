@@ -3,10 +3,10 @@ import { useParams } from "react-router-dom";
 
 function SimilarArtists(props) {
   const { artist } = useParams();
-  const [similarArtists, setSimilarArtists] = useState([]);
+  const [similarArtists, setSimilarArtists] = useState(null);
 
   useEffect(() => {
-    const url = `https://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=${artist}&api_key=${process.env.REACT_APP_API_KEY}&format=json`;
+    const url = `https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${artist}&api_key=${process.env.REACT_APP_API_KEY}&format=json`;
 
     fetch(url)
       .then((res) => res.json())
@@ -20,7 +20,7 @@ function SimilarArtists(props) {
   }
   return (
     <div>
-      <h2>Similar Artists to {artist}</h2>
+      <h2>Similar Artists to {similarArtists.artist.name}</h2>
     </div>
   );
 }
