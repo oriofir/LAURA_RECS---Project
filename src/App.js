@@ -17,7 +17,7 @@ function App() {
           <Route path="/" element={<HomeCarousel data={data[0]} />}></Route>
           <Route path="/releases" element={<Releases />}></Route>
           <Route
-            path="similarartists/:symbol"
+            path="similarartists/:artist"
             element={<SimilarArtists />}
           ></Route>
         </Routes>

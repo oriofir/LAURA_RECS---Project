@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { Card } from "react-bootstrap";
 
 function SimilarArtists(props) {
   const { artist } = useParams();
@@ -8,11 +9,13 @@ function SimilarArtists(props) {
   useEffect(() => {
     const url = `https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${artist}&api_key=${process.env.REACT_APP_API_KEY}&format=json`;
 
+    console.log(url);
+
     fetch(url)
       .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        setSimilarArtists(data);
+      .then((res) => {
+        console.log(res);
+        setSimilarArtists(res);
       });
   }, []);
   if (!similarArtists) {
@@ -20,7 +23,15 @@ function SimilarArtists(props) {
   }
   return (
     <div>
-      <h2>Similar Artists to {similarArtists.artist.name}</h2>
+      <h2 style={{ color: "black" }}>
+        Similar Artists to {similarArtists.artist.name}
+      </h2>
+      <Card style={{ width: "18rem", color: "black" }}>
+        <Card.Body>
+          <Card.Title>{similarArtists.artist.similar[0]}</Card.Title>
+          <Card.Text>{similarArtists.artist.tags[0]}</Card.Text>
+        </Card.Body>
+      </Card>
     </div>
   );
 }
