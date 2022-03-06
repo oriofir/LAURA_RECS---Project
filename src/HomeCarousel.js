@@ -31,9 +31,9 @@ const HomeCarousel = () => {
 
             <Carousel.Caption className="carouselCaption">
               <p>{element.title}</p>
-              <Button variant="dark" onClick={handleStream}>
+              {/* <Button variant="dark" onClick={handleStream}>
                 Preview
-              </Button>{" "}
+              </Button>{" "} */}
               <Link to={`/similarartists/${element.artist}`}>
                 <Button variant="dark" key={element.artist}>
                   Similar Artists

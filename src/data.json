@@ -16,6 +16,22 @@
     },
 
     {
+        "version": 1,
+        "type": "rich",
+        "provider_name": "SoundCloud",
+        "provider_url": "https://soundcloud.com",
+        "height": 400,
+        "width": "100%",
+        "title": "Maeve - All In Your Mind - L.A.U.R.A. Mix Series 002",
+        "artist": "Maeve",
+        "description": "L.A.U.R.A. Recs Mix Series 002 : Maeve - All In Your Mind Mix",
+        "thumbnail_url": "https://i1.sndcdn.com/artworks-L0tvCDg7ANp1kzz1-VOHuDw-t500x500.jpg",
+        "stream": "https://w.soundcloud.com/player/?visual=true&url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F1207919959&show_artwork=true",
+        "author_name": "L.A.U.R.A. RECS",
+        "author_url": "https://soundcloud.com/laurarecs"
+        },
+
+    {
         "'version'": 1,
         "type": "rich",
         "provider_name": "SoundCloud",
@@ -61,7 +77,56 @@
             "thumbnail_url": "https://i1.sndcdn.com/artworks-T5dgxSshOyya1yLa-9ri6Gg-t500x500.jpg",
             "author_name": "L.A.U.R.A. RECS",
             "author_url": "https://soundcloud.com/laurarecs"
-            }
+            },
+
+            {
+                "version": 1,
+                "type": "rich",
+                "provider_name": "SoundCloud",
+                "provider_url": "https://soundcloud.com",
+                "height": 400,
+                "width": "100%",
+                "title": "Adiós Mundo Cruel - At Hand ",
+                "artist": "Adiós Mundo Cruel",
+                "description": "",
+                "thumbnail_url": "https://i1.sndcdn.com/artworks-cXWeZDF9yxpMCLoV-vVHryQ-t500x500.jpg",
+              "stream": "https://w.soundcloud.com/player/?visual=true&url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F1104880549&show_artwork=true",
+                "author_name": "L.A.U.R.A. RECS",
+                "author_url": "https://soundcloud.com/laurarecs"
+                },
+
+                {
+                    "version": 1,
+                    "type": "rich",
+                    "provider_name": "SoundCloud",
+                    "provider_url": "https://soundcloud.com",
+                    "height": 400,
+                    "width": "100%",
+                    "title": "Spiderwrap - Untitled",
+                    "artist": "Spiderwrap",
+                    "description": "https://laurarecs.bandcamp.com/album/l-a-u-r-a-003-sudden-collapse",
+                    "thumbnail_url": "https://i1.sndcdn.com/artworks-Bg1dlsC8mi3az2AW-gEkgfA-t500x500.jpg",
+                    "stream": "https://w.soundcloud.com/player/?visual=true&url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F1038846826&show_artwork=true",
+                    "author_name": "L.A.U.R.A. RECS",
+                    "author_url": "https://soundcloud.com/laurarecs"
+                    },
+                    {
+                        "version": 1,
+                        "type": "rich",
+                        "provider_name": "SoundCloud",
+                        "provider_url": "https://soundcloud.com",
+                        "height": 400,
+                        "width": "100%",
+                        "title": "Lower Tar - That Shit In Your Brain",
+                        "artist": "Lower Tar",
+                        "description": "https://laurarecs.bandcamp.com/album/l-a-u-r-a-002-severe-breakaway",
+                        "thumbnail_url": "https://i1.sndcdn.com/artworks-7s5cfZTuqEqdwWb5-RWQywg-t500x500.jpg",
+                        "stream": "<iframe width=100% height=400 scrolling=no frameborder=no src=https://w.soundcloud.com/player/?visual=true&url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F999022222&show_artwork=true</iframe>",
+                        "author_name": "L.A.U.R.A. RECS",
+                        "author_url": "https://soundcloud.com/laurarecs"
+                        }
+
+    
 
 
 ]

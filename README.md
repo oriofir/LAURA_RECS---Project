@@ -50,15 +50,15 @@ MVP Goals
 - Flip through the homepage carousel with different release album cover art
 - linking API data for the album art work and song associated with it
 - clicking a play button thats on each slide and have it link to a song associated
--
 - clicking into the carousel and having it route to the release
-- stylizing the homepage to match the label's aesthetic
 - click similar artists button and have it display similar artist cards
+- Link releases component in the nav bar with a routed link that opens a page
+- clicking into the About button and routing to a bio section in the nav bar with a routed link that opens a page
 
 Stretch Goals
 
 - Link shows component in the nav bar with a routed link that opens a page
-- Link releases component in the nav bar with a routed link that opens a page
 - Link shows releases component
-- clicking into the About button and routing to a bio section in the nav bar with a routed link that opens a page
+
 - having a navigation bar with clickable links to shows, releases, and merchandise
+- stylizing the homepage to match the label's aesthetic
