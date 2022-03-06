@@ -59,6 +59,5 @@ Stretch Goals
 
 - Link shows component in the nav bar with a routed link that opens a page
 - Link shows releases component
-
 - having a navigation bar with clickable links to shows, releases, and merchandise
 - stylizing the homepage to match the label's aesthetic
