@@ -21,40 +21,43 @@ function SimilarArtists(props) {
         setSimilarArtists(res);
       });
   }, []);
-  if (!similarArtists) {
-    return null;
-  }
 
   function openExternalUrl() {
     window.open(
-      `https://www.last.fm/music/${similarArtists.artist.similar[0].artist}`
+      `https://www.last.fm/music/${similarArtists.artist.similar.artist[0].name}`
     );
   }
-
+  if (!similarArtists) {
+    return null;
+  }
   return (
     <>
-      <h2 style={{ color: "black" }}>
+      <h2 style={{ color: "whitesmoke" }}>
         Similar Artists to {similarArtists.artist.name}
       </h2>
       <Row xs={1} md={2} className="g-4">
-        {Array.from({ length: 4 }).map((_, idx) => (
-          <Col key={idx}>
-            <Card style={{ width: "18rem", color: "black" }}>
-              <Card.Img variant="top" src={similarArtists.artist.similar[0]} />
-              <Card.Body>
-                <Card.Title>{similarArtists.artist.similar[0]}</Card.Title>
-                <Card.Text>{similarArtists.artist.tags[0]}</Card.Text>
-              </Card.Body>
-              <Button
-                style={{ backgroundColor: "black" }}
-                size="lg"
-                onClick={openExternalUrl}
-              >
-                Last FM Profile
-              </Button>
-            </Card>
-          </Col>
-        ))}
+        {similarArtists.artist.similar.artist.map((object, idx) => {
+          return (
+            <Col key={idx}>
+              <Card style={{ width: "18rem", color: "black" }}>
+                <Card.Img variant="top" src={object.image[0]["#text"]} />
+                <Card.Body>
+                  <Card.Title>{object.name}</Card.Title>
+                  <Card.Text>
+                    {similarArtists.artist.tags.tag[0].name}
+                  </Card.Text>
+                </Card.Body>
+                <Button
+                  style={{ backgroundColor: "black" }}
+                  size="lg"
+                  onClick={openExternalUrl}
+                >
+                  Last FM Profile
+                </Button>
+              </Card>
+            </Col>
+          );
+        })}
       </Row>
     </>
   );

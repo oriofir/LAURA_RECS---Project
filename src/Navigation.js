@@ -6,7 +6,7 @@ import "./index.css";
 
 const Navigation = () => {
   return (
-    <Navbar collapseOnSelect variant="light" expand="md">
+    <Navbar collapseOnSelect variant="dark" expand="md">
       <Navbar.Brand as={Link} to="/.">
         L.A.U.R.A.
       </Navbar.Brand>

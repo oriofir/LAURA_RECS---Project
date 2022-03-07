@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { Stack } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
-function Releases(props) {
-  const [releases, setReleases] = useState(null);
+const Releases = ({ releases }) => {
+  const [item, setItem] = useState(null);
 
   useEffect(() => {
     const url = `https://ws.audioscrobbler.com/2.0/?method=album.search&album=L.A.U.R.A.&api_key=${process.env.REACT_APP_API_KEY}&format=json`;
@@ -10,7 +12,7 @@ function Releases(props) {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        setReleases(data);
+        setItem(data);
       });
   }, []);
   if (!releases) {
@@ -19,8 +21,13 @@ function Releases(props) {
   return (
     <div>
       <h1>Releases</h1>
+      <ul>
+        {releases.results.albummatches.album.map((data) => {
+          return <li key={data.results.albummatches}>{data.album[0]}</li>;
+        })}
+      </ul>
     </div>
   );
-}
+};
 
 export default Releases;

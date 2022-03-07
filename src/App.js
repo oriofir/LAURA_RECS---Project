@@ -9,6 +9,8 @@ import Releases from "./Releases";
 import SimilarArtists from "./SimilarArtists";
 
 function App() {
+  const [similarArtists, setSimilarArtists] = useState(null);
+
   return (
     <Container>
       <Navigation />
@@ -18,8 +20,9 @@ function App() {
           <Route path="/releases" element={<Releases />}></Route>
           <Route
             path="similarartists/:artist"
-            element={<SimilarArtists />}
+            element={<SimilarArtists similarArtists={similarArtists} />}
           ></Route>
+          <Route path="/about" element={<About />}></Route>
         </Routes>
       </main>
     </Container>
