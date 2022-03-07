@@ -10,13 +10,17 @@ function Releases(props) {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        // setRelases(data);
+        setReleases(data);
       });
   }, []);
   if (!releases) {
     return null;
   }
-  return <div>Releases</div>;
+  return (
+    <div>
+      <h1>Releases</h1>
+    </div>
+  );
 }
 
 export default Releases;
