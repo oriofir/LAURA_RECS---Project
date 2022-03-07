@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Stack } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const Releases = ({ releases }) => {
+function Releases() {
   const [item, setItem] = useState(null);
 
   useEffect(() => {
@@ -10,24 +10,24 @@ const Releases = ({ releases }) => {
 
     fetch(url)
       .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        setItem(data);
+      .then((res) => {
+        console.log(res);
+        setItem(res);
       });
   }, []);
-  if (!releases) {
+  if (!item) {
     return null;
   }
   return (
-    <div>
+    <div style={{ color: "whitesmoke" }}>
       <h1>Releases</h1>
       <ul>
-        {releases.results.albummatches.album.map((data) => {
-          return <li key={data.results.albummatches}>{data.album[0]}</li>;
+        {item.results.albummatches.album.map((object, idx) => {
+          return <li key={idx}>{object.artist}</li>;
         })}
       </ul>
     </div>
   );
-};
+}
 
 export default Releases;

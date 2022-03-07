@@ -22,11 +22,7 @@ function SimilarArtists(props) {
       });
   }, []);
 
-  function openExternalUrl() {
-    window.open(
-      `https://www.last.fm/music/${similarArtists.artist.similar.artist[0].name}`
-    );
-  }
+  function openExternalUrl() {}
   if (!similarArtists) {
     return null;
   }
@@ -50,7 +46,9 @@ function SimilarArtists(props) {
                 <Button
                   style={{ backgroundColor: "black" }}
                   size="lg"
-                  onClick={openExternalUrl}
+                  onClick={() => {
+                    window.open(`https://www.last.fm/music/${object.name}`);
+                  }}
                 >
                   Last FM Profile
                 </Button>
