@@ -22,7 +22,6 @@ function SimilarArtists(props) {
       });
   }, []);
 
-  function openExternalUrl() {}
   if (!similarArtists) {
     return null;
   }

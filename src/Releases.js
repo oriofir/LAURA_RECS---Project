@@ -23,7 +23,11 @@ function Releases() {
       <h1>Releases</h1>
       <ul>
         {item.results.albummatches.album.map((object, idx) => {
-          return <li key={idx}>{object.artist}</li>;
+          return (
+            <li key={idx}>
+              Album: {object.artist} - {object.name}
+            </li>
+          );
         })}
       </ul>
     </div>
