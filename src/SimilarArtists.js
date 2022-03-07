@@ -17,7 +17,7 @@ function SimilarArtists(props) {
     fetch(url)
       .then((res) => res.json())
       .then((res) => {
-        /* console.log(res); */
+        console.log(res);
         setSimilarArtists(res);
       });
   }, []);
@@ -27,7 +27,7 @@ function SimilarArtists(props) {
 
   function openExternalUrl() {
     window.open(
-      `https://www.last.fm/music/${similarArtists.artist.similar[0]}`
+      `https://www.last.fm/music/${similarArtists.artist.similar[0].artist}`
     );
   }
 
@@ -38,11 +38,8 @@ function SimilarArtists(props) {
       </h2>
       <Row xs={1} md={2} className="g-4">
         {Array.from({ length: 4 }).map((_, idx) => (
-          <Col>
-            <Card
-              key={similarArtists.artist}
-              style={{ width: "18rem", color: "black" }}
-            >
+          <Col key={idx}>
+            <Card style={{ width: "18rem", color: "black" }}>
               <Card.Img variant="top" src={similarArtists.artist.similar[0]} />
               <Card.Body>
                 <Card.Title>{similarArtists.artist.similar[0]}</Card.Title>
@@ -53,7 +50,7 @@ function SimilarArtists(props) {
                 size="lg"
                 onClick={openExternalUrl}
               >
-                Last FM
+                Last FM Profile
               </Button>
             </Card>
           </Col>
