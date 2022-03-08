@@ -48,15 +48,19 @@ function SimilarArtists(props) {
 
   return (
     <>
-      <h2 style={{ color: "whitesmoke" }}>
+      <h2 style={{ color: "whitesmoke", marginBottom: 30 }}>
         Similar Artists to {similarArtists.artist.name}
       </h2>
-      <Row xs={1} md={2} className="g-4">
+      <Row xs={2} md={2} className="g-4">
         {similarArtists.artist.similar.artist.map((object, idx) => {
           return (
             <Col key={idx}>
-              <Card style={{ width: "18rem", color: "black" }}>
-                <Card.Img variant="top" src={object.image[0]["#text"]} />
+              <Card style={{ width: "15rem", height: "100%", color: "black" }}>
+                <Card.Img
+                  style={{ width: "5rem" }}
+                  variant="top"
+                  src={object.image[0]["#text"]}
+                />
                 <Card.Body>
                   <Card.Title>{object.name}</Card.Title>
                   <Card.Text>

@@ -10,6 +10,8 @@ import App from "./App";
 test("slides are rendering", () => {
   render(<HomeCarousel />);
 
-  const linkElement = screen.getByText("First slide label");
+  const linkElement = screen.getByText(
+    "Maeve - All In Your Mind - L.A.U.R.A. Mix Series 002"
+  );
   expect(linkElement).toBeShowing();
 });
