@@ -7,27 +7,18 @@ import "./index.css";
 
 const Navigation = () => {
   return (
-    <div>
-      <Image
-        style={{
-          width: 300,
-          height: 50,
-          display: "flex",
-          justifyContent: "center",
-        }}
-        src="https://i.imgur.com/EULiKVD.jpg"
-      />
-
+    <div style={{ display: "flex", justifyContent: "center" }}>
       <Navbar collapseOnSelect variant="dark" expand="md">
         <Navbar.Brand as={Link} to="/.">
           <Image
-            src="https://i.imgur.com/BOFLbgG.jpg"
-            title="source: imgur.com"
-            className="img-fluid shadow-4"
             style={{
-              borderRadius: 35,
-              width: 50,
+              width: 200,
+              height: 50,
+              display: "flex",
+              justifyContent: "center",
+              borderRadius: 10,
             }}
+            src="https://i.imgur.com/EULiKVD.jpg"
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
