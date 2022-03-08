@@ -29,7 +29,7 @@ function Releases() {
       }}
     >
       <h1 style={{ display: "flex", justifyContent: "center" }}>Releases</h1>
-      <div>Artist - Album </div>
+      <div style={{ paddingBottom: 15 }}>Artist - Album </div>
       <ul>
         {item.results.albummatches.album.map((object, idx) => {
           return (
