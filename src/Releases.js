@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Stack } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 function Releases() {
   const [item, setItem] = useState(null);
@@ -11,7 +9,6 @@ function Releases() {
     fetch(url)
       .then((res) => res.json())
       .then((res) => {
-        console.log(res);
         setItem(res);
       });
   }, []);
@@ -23,13 +20,30 @@ function Releases() {
     window.open(`https://laurarecs.bandcamp.com/album/`);
   }
   return (
-    <div style={{ color: "whitesmoke" }}>
-      <h1>Releases</h1>
+    <div
+      style={{
+        color: "whitesmoke",
+        display: "flex",
+        alignContent: "center",
+        flexDirection: "column",
+      }}
+    >
+      <h1 style={{ display: "flex", justifyContent: "center" }}>Releases</h1>
+      <div>Artist - Album </div>
       <ul>
         {item.results.albummatches.album.map((object, idx) => {
           return (
-            <li style={{ cursor: "pointer" }} onClick={handClick} key={idx}>
-              Artist/Album: {object.artist} - {object.name}
+            <li
+              style={{
+                cursor: "pointer",
+                listStyle: "none",
+                lineHeight: "2em",
+                letterSpacing: 2,
+              }}
+              onClick={handClick}
+              key={idx}
+            >
+              {object.artist} - {object.name}
             </li>
           );
         })}

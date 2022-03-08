@@ -8,7 +8,7 @@ function About(props) {
       <a
         style={{ width: 100, height: 100, cursor: "pointer" }}
         onClick={() => {
-          window.open("https://laurarecs.bandcamp.com/");
+          window.open("https://www.instagram.com/l.a.u.r.a._recs/");
         }}
       >
         <Image

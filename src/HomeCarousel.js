@@ -6,7 +6,6 @@ import { Router, Route, Link } from "react-router-dom";
 
 const HomeCarousel = () => {
   const [stream, setStream] = useState(data[0].stream);
-  console.log(stream);
 
   const handleStream = () => {
     setStream(stream);
@@ -24,6 +23,7 @@ const HomeCarousel = () => {
                 width: "100%",
                 objectFit: "cover",
                 overflow: "hidden",
+                borderRadius: 10,
               }}
               src={element.thumbnail_url}
               alt={element.title}

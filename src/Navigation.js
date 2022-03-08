@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import { Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./index.css";
 
@@ -8,7 +9,15 @@ const Navigation = () => {
   return (
     <Navbar collapseOnSelect variant="dark" expand="md">
       <Navbar.Brand as={Link} to="/.">
-        L.A.U.R.A.
+        <Image
+          src="https://i.imgur.com/BOFLbgG.jpg"
+          title="source: imgur.com"
+          className="img-fluid shadow-4"
+          style={{
+            borderRadius: 35,
+            width: 50,
+          }}
+        />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

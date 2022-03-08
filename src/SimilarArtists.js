@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { Card } from "react-bootstrap";
-import { Col } from "react-bootstrap";
-import { Row } from "react-bootstrap";
-import { Button } from "react-bootstrap";
+import { Card, Col, Row, Button, Container, Spinner } from "react-bootstrap";
 
 function SimilarArtists(props) {
   const { artist } = useParams();
   const [similarArtists, setSimilarArtists] = useState(null);
+  const [error, setError] = useState("");
 
-  useEffect(() => {
+  const handleError = () => {
+    setError(true);
+  };
+
+  const getDetail = () => {
     const url = `https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${artist}&api_key=${process.env.REACT_APP_API_KEY}&format=json`;
 
     console.log(url);
@@ -17,14 +19,33 @@ function SimilarArtists(props) {
     fetch(url)
       .then((res) => res.json())
       .then((res) => {
-        console.log(res);
+        if (res.error === "Not Found") {
+          setError(res.error);
+        }
         setSimilarArtists(res);
-      });
+        // console.log(res);
+      })
+      .catch(console.error);
+  };
+
+  useEffect(() => {
+    getDetail();
+    handleError();
   }, []);
 
   if (!similarArtists) {
-    return null;
+    return (
+      <Container
+        className="d-flex  justify-content-center align-items-center align-content-center"
+        style={{ minHeight: "90vh" }}
+      >
+        <span style={{ paddingRight: "1em", color: "whitesmoke" }}>
+          Not Found{"  "}
+        </span>
+      </Container>
+    );
   }
+
   return (
     <>
       <h2 style={{ color: "whitesmoke" }}>

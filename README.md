@@ -6,6 +6,10 @@ A website for the record label/party series I run called L.A.U.R.A. Recs
 Link to the API you plan to use
 https://soundcloud.com/oembed?format=json&url=https://m.soundcloud.com/laurarecs/autumns-my-bodys-overwhelming-sound-of-decay-ft-lower-tar
 
+http://ws.audioscrobbler.com/2.0/?method=album.search&album=believe&api_key=YOUR_API_KEY&format=json
+
+http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=Cher&api_key=YOUR_API_KEY&format=json
+
 ```
 Example data response you plan to use
 {
@@ -22,6 +26,19 @@ html: "<iframe width="100%" height="400" scrolling="no" frameborder="no" src="ht
 author_name: "L.A.U.R.A. RECS",
 author_url: "https://soundcloud.com/laurarecs"
 }
+
+
+artist:
+bio: {links: {…}, published: '01 Jan 1970, 00:00', summary: ' <a href="https://www.last.fm/music/Strait+Jacket">Read more on Last.fm</a>', content: ''}
+image: (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+name: "Strait Jacket"
+ontour: "0"
+similar: {artist: Array(5)}
+stats: {listeners: '281', playcount: '1577'}
+streamable: "0"
+tags: {tag: Array(5)}
+url: "https://www.last.fm/music/Strait+Jacket"
+
 ```
 
 Visual of your component hierarchy
