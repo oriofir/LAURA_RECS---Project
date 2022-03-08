@@ -1,15 +1,26 @@
 import React from "react";
+import { Image } from "react-bootstrap";
 
 function About(props) {
   return (
     <div style={{ color: "whitesmoke" }}>
       <h2>About</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis in
-        amet dolores reiciendis minima delectus! Labore ad optio dolores
-        commodi, dignissimos voluptates? Magnam omnis nemo dolore sequi minus
-        ipsum quidem.
-      </p>
+      <a
+        style={{ width: 100, height: 100, cursor: "pointer" }}
+        onClick={() => {
+          window.open("https://laurarecs.bandcamp.com/");
+        }}
+      >
+        <Image
+          src="https://i.imgur.com/5giVyes.jpg"
+          title="source: imgur.com"
+          className="img-fluid shadow-4"
+          style={{
+            borderRadius: 35,
+            width: 1000,
+          }}
+        />
+      </a>
     </div>
   );
 }

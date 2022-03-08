@@ -1,21 +1,6 @@
 [
-    {
-    "'version'": 1,
-    "type": "rich",
-    "provider_name": "SoundCloud",
-    "provider_url": "https://soundcloud.com",
-    "height": 400,
-    "width": "100%",
-    "title": "Autumns - My Body's Overwhelming Sound Of Decay Ft Lower Tar",
-    "artist": "Autumns",
-    "stream": "https://w.soundcloud.com/player/?visual=true&url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F1173282481",
-    "description": "L.A.U.R.A. Recs 006 : Autumns / Smog Index - Tasteless EP",
-    "thumbnail_url": "https://i1.sndcdn.com/artworks-E6cTuMBcBTbnlpCX-iPySHQ-t500x500.jpg",
-    "author_name": "L.A.U.R.A. RECS",
-    "author_url": "https://soundcloud.com/laurarecs"
-    },
-
-    {
+   
+ {
         "version": 1,
         "type": "rich",
         "provider_name": "SoundCloud",
@@ -30,6 +15,22 @@
         "author_name": "L.A.U.R.A. RECS",
         "author_url": "https://soundcloud.com/laurarecs"
         },
+
+        {
+            "'version'": 1,
+            "type": "rich",
+            "provider_name": "SoundCloud",
+            "provider_url": "https://soundcloud.com",
+            "height": 400,
+            "width": "100%",
+            "title": "Autumns - My Body's Overwhelming Sound Of Decay Ft Lower Tar",
+            "artist": "Autumns",
+            "stream": "https://w.soundcloud.com/player/?visual=true&url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F1173282481",
+            "description": "L.A.U.R.A. Recs 006 : Autumns / Smog Index - Tasteless EP",
+            "thumbnail_url": "https://i1.sndcdn.com/artworks-E6cTuMBcBTbnlpCX-iPySHQ-t500x500.jpg",
+            "author_name": "L.A.U.R.A. RECS",
+            "author_url": "https://soundcloud.com/laurarecs"
+            },
 
     {
         "'version'": 1,
