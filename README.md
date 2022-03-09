@@ -43,10 +43,12 @@ url: "https://www.last.fm/music/Strait+Jacket"
 
 Visual of your component hierarchy
 Project 1 Component Hierarchy
+https://media.git.generalassemb.ly/user/41584/files/c5540b00-99c1-11ec-9190-4ef27b091e99
 
 Wire Frames
 Copy and paste or drag and drop your images here.
 Project 1 Wire Frame
+https://media.git.generalassemb.ly/user/41584/files/c84efb80-99c1-11ec-9221-d13f66ea38c2
 
 User Stories
 Add user stories following the As a [type of user], I want [what the user wants], so that [what it helps accomplish] format.

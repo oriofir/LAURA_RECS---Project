@@ -14,7 +14,7 @@ function SimilarArtists(props) {
   const getDetail = () => {
     const url = `https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${artist}&api_key=${process.env.REACT_APP_API_KEY}&format=json`;
 
-    console.log(url);
+    // console.log(url);
 
     fetch(url)
       .then((res) => res.json())
@@ -40,7 +40,7 @@ function SimilarArtists(props) {
         style={{ minHeight: "90vh" }}
       >
         <span style={{ paddingRight: "1em", color: "whitesmoke" }}>
-          Not Found{"  "}
+          Loading{"  "}
         </span>
       </Container>
     );
