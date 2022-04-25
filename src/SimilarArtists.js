@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { Card, Col, Row, Button, Container, Spinner } from "react-bootstrap";
+import { Card, Col, Row, Button, Container } from "react-bootstrap";
 
 function SimilarArtists(props) {
   const { artist } = useParams();
